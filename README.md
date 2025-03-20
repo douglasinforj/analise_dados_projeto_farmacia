@@ -75,3 +75,48 @@ cd venv/Scripts/activate
 
 pip install mysql-connector-python  # conexão com o mysql
 ```
+
+### Script para importação de dados
+- Criar uma arquivo com nome importacao.py na raiz do projeto.
+```
+import pandas as pd
+import mysql.connector
+
+# Conectar ao banco de dados MySQL
+connection = mysql.connector.connect(
+    host='localhost',        # ou o host do seu servidor MySQL
+    user='root',             # seu usuário
+    password='sua_senha',    # sua senha
+    database='farmacia'      # nome do banco de dados
+)
+
+cursor = connection.cursor()
+
+# Carregar os arquivos CSV em DataFrames
+df_produtos = pd.read_csv('/mnt/data/produtos.csv')
+df_vendedores = pd.read_csv('/mnt/data/vendedores.csv')
+df_clientes = pd.read_csv('/mnt/data/clientes.csv')
+df_vendas = pd.read_csv('/mnt/data/vendas.csv')
+
+# Função para inserir dados em uma tabela
+def insert_data(table, data):
+    for i, row in data.iterrows():
+        columns = ', '.join(data.columns)
+        values = ', '.join([f"'{x}'" if isinstance(x, str) else str(x) for x in row])
+        sql = f"INSERT INTO {table} ({columns}) VALUES ({values})"
+        cursor.execute(sql)
+
+# Inserir dados nas tabelas
+insert_data('produtos', df_produtos)
+insert_data('vendedores', df_vendedores)
+insert_data('clientes', df_clientes)
+insert_data('vendas', df_vendas)
+
+# Confirmar e fechar a conexão
+connection.commit()
+cursor.close()
+connection.close()
+
+print("Dados importados com sucesso!")
+
+```
