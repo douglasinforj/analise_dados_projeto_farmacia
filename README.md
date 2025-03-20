@@ -61,7 +61,7 @@ CREATE TABLE vendas (
 
 ### Arquivos ficticios de dados para o projeto (Download dos Dados)
 Você pode baixar o arquivo de dados diretamente através do link abaixo:
- - [📂 Baixar clienres.csv](https://github.com/douglasinforj/analise_dados_projeto_farmacia/tree/main/data/clientes.csv)
- - [📂 Baixar clienres.csv](https://github.com/douglasinforj/analise_dados_projeto_farmacia/tree/main/data/produtos.csv)
- - [📂 Baixar clienres.csv](https://github.com/douglasinforj/analise_dados_projeto_farmacia/tree/main/data/venddas.csv)
- - [📂 Baixar clienres.csv](https://github.com/douglasinforj/analise_dados_projeto_farmacia/tree/main/data/vendedores.csv)
+ - [📂 Baixar clientes.csv](https://github.com/douglasinforj/analise_dados_projeto_farmacia/tree/main/data/clientes.csv)
+ - [📂 Baixar produtos.csv](https://github.com/douglasinforj/analise_dados_projeto_farmacia/tree/main/data/produtos.csv)
+ - [📂 Baixar vendas.csv](https://github.com/douglasinforj/analise_dados_projeto_farmacia/tree/main/data/vendas.csv)
+ - [📂 Baixar vendedores.csv](https://github.com/douglasinforj/analise_dados_projeto_farmacia/tree/main/data/vendedores.csv)
