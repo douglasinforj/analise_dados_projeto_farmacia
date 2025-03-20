@@ -8,7 +8,7 @@
 
  - Acessando banco de dados mysql, vamos criar o banco de tabelas do projeto
 
-`
+```
 CREATE DATABASE farmacia;
 
 USE farmacia;
@@ -58,4 +58,4 @@ CREATE TABLE vendas (
 );
 
 
-`
+```
