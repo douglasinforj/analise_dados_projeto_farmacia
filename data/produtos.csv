@@ -1,0 +1,11 @@
+produto,preco_custo,preco_venda,categoria
+Paracetamol,5.0,10.0,Medicamento
+Ibuprofeno,6.0,12.0,Medicamento
+Aspirina,3.0,7.0,Medicamento
+Shampoo,8.0,15.0,Cosmético
+Creme Facial,20.0,35.0,Cosmético
+Desodorante,5.0,10.0,Cosmético
+Pomada para Dor,10.0,20.0,Medicamento
+Protetor Solar,15.0,30.0,Cosmético
+Vitamina C,12.0,25.0,Suplementos
+Multivitamínico,18.0,40.0,Suplementos
