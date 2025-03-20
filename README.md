@@ -65,3 +65,13 @@ Você pode baixar o arquivo de dados diretamente através do link abaixo:
  - [📂 Baixar produtos.csv](https://github.com/douglasinforj/analise_dados_projeto_farmacia/raw/main/data/produtos.csv)
  - [📂 Baixar vendas.csv](https://github.com/douglasinforj/analise_dados_projeto_farmacia/raw/main/data/vendas.csv)
  - [📂 Baixar vendedores.csv](https://github.com/douglasinforj/analise_dados_projeto_farmacia/raw/main/data/vendedores.csv)
+
+### Importar os arquivos para o banco de dados
+
+### No terminal na pasta do projeto
+```
+python -m venv venv   #criando ambiente virtual
+cd venv/Scripts/activate
+
+pip install mysql-connector-python  # conexão com o mysql
+```
